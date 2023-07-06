@@ -1,6 +1,6 @@
 ﻿namespace SecimSistemi
 {
-    partial class Form1
+    partial class OyGiris
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
             this.TBEmekPartisi = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.ButtonOyGiris = new System.Windows.Forms.Button();
-            this.ButtonIstatistik = new System.Windows.Forms.Button();
+            this.ButtonCikis = new System.Windows.Forms.Button();
             this.ButtonGrafik = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -176,35 +176,37 @@
             this.ButtonOyGiris.TabIndex = 12;
             this.ButtonOyGiris.Text = "OY GİRİŞİ YAP";
             this.ButtonOyGiris.UseVisualStyleBackColor = false;
+            this.ButtonOyGiris.Click += new System.EventHandler(this.ButtonOyGiris_Click);
             // 
-            // ButtonIstatistik
+            // ButtonCikis
             // 
-            this.ButtonIstatistik.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ButtonIstatistik.Location = new System.Drawing.Point(15, 292);
-            this.ButtonIstatistik.Name = "ButtonIstatistik";
-            this.ButtonIstatistik.Size = new System.Drawing.Size(144, 34);
-            this.ButtonIstatistik.TabIndex = 13;
-            this.ButtonIstatistik.Text = "İSTATİSTİKLER";
-            this.ButtonIstatistik.UseVisualStyleBackColor = true;
+            this.ButtonCikis.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ButtonCikis.Location = new System.Drawing.Point(177, 292);
+            this.ButtonCikis.Name = "ButtonCikis";
+            this.ButtonCikis.Size = new System.Drawing.Size(144, 34);
+            this.ButtonCikis.TabIndex = 13;
+            this.ButtonCikis.Text = "ÇIKIŞ YAP";
+            this.ButtonCikis.UseVisualStyleBackColor = true;
             // 
             // ButtonGrafik
             // 
             this.ButtonGrafik.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ButtonGrafik.Location = new System.Drawing.Point(177, 292);
+            this.ButtonGrafik.Location = new System.Drawing.Point(13, 292);
             this.ButtonGrafik.Name = "ButtonGrafik";
             this.ButtonGrafik.Size = new System.Drawing.Size(144, 34);
             this.ButtonGrafik.TabIndex = 14;
             this.ButtonGrafik.Text = "GRAFİKLER";
             this.ButtonGrafik.UseVisualStyleBackColor = true;
+            this.ButtonGrafik.Click += new System.EventHandler(this.ButtonGrafik_Click);
             // 
-            // Form1
+            // OyGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(348, 343);
             this.Controls.Add(this.ButtonGrafik);
-            this.Controls.Add(this.ButtonIstatistik);
+            this.Controls.Add(this.ButtonCikis);
             this.Controls.Add(this.ButtonOyGiris);
             this.Controls.Add(this.TBEmekPartisi);
             this.Controls.Add(this.label6);
@@ -219,9 +221,9 @@
             this.Controls.Add(this.TBIlceAd);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "OyGiris";
+            this.Text = "Seçim Sistemi";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,7 +244,7 @@
         private System.Windows.Forms.TextBox TBEmekPartisi;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button ButtonOyGiris;
-        private System.Windows.Forms.Button ButtonIstatistik;
+        private System.Windows.Forms.Button ButtonCikis;
         private System.Windows.Forms.Button ButtonGrafik;
     }
 }
